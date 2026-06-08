@@ -9,6 +9,7 @@ import { useState } from "react";
 import { toast } from "sonner";
 // import TemplateSelectingModal from "./template-selecting-modal";
 import { createPlayground } from "../actions";
+import TemplateSelectionModal from "./template-selecting-modal";
 
 const AddNewButton = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -71,11 +72,11 @@ const AddNewButton = () => {
           />
         </div>
       </div>
-      {/* <TemplateSelectingModal
+      <TemplateSelectionModal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
         onSubmit={handleSubmit}
-      /> */}
+      />
     </>
   );
 };
